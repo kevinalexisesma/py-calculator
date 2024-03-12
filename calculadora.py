@@ -11,5 +11,11 @@ operation = input("Enter the operation you want to perform: "
 if operation == "1":
     suma = num1 + num2
     print("\n The sum is: ", suma)
+elif operation == "2":
+    subtraction = num1 - num2
+    print("\n The subtraction is: ", subtraction)
+elif operation == "3":
+    division = num1 / num2
+    print("\n The division is: ", division)
 else:
     print("\nHe made the wrong operation.")
