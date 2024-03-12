@@ -9,13 +9,19 @@ operation = input("Enter the operation you want to perform: "
                   +"\n 4. if it is multiplication.\n\n")
 # The typed operation is performed
 if operation == "1":
-    suma = num1 + num2
-    print("\n The sum is: ", suma)
+    sum = num1 + num2
+    print(f"\n The sum is: {sum}")
 elif operation == "2":
     subtraction = num1 - num2
-    print("\n The subtraction is: ", subtraction)
+    print(f"\n The subtraction is: {subtraction}")
 elif operation == "3":
-    division = num1 / num2
-    print("\n The division is: ", division)
+    if num2==0 : 
+        print(f"\n The second number entered cannot be zero: {num2}")
+    else:    
+        division = num1 / num2
+        print(f"\n The division is: {division:.2f}")
+elif operation == "4":
+    multiplication = num1 * num2
+    print(f"\n The multiplication is: {multiplication}")
 else:
-    print("\nHe made the wrong operation.")
+    print(f"\nHe made the wrong operation.")
